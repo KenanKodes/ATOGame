@@ -49,9 +49,8 @@ def help(update, context):
 
 def sudo(update, context):
     update.message.reply_text('⭐️Sahiblər:\n\n' +
-                              '1➤ @LordSahib\n' +
-                              '2➤ @bashirovduala\n' +
-                              '3➤ @Vusalim', reply_to_message_id=True)
+                              '1➤ @KenandiBrat_01\n' +
+                              '2➤ @ll_Lonely_ll', reply_to_message_id=True)
 
 def button(update, context):
     user_id = update.callback_query.from_user.id
@@ -76,10 +75,10 @@ def button(update, context):
 def command_start(update, context: CallbackContext):
     if update.effective_chat.type == "private":
         
-        addme = InlineKeyboardButton(text="➕ 𝑸𝑼𝑹𝑼𝑷𝑨 𝑬𝑳𝑨𝑽𝑬 𝑬𝑻 ➕", url="http://t.me/LordGamesRoBot?startgroup=a") 
-        sohbet = InlineKeyboardButton(text="⛑ 𝑫𝑬𝑺𝑻𝑬𝑲 𝑸𝑼𝑹𝑼𝑷𝑼𝑴𝑼𝒁", url="https://t.me/TheLORDSupport") 
-        oyun = InlineKeyboardButton(text="📲 𝒀𝑬𝑵𝒊𝑳𝒊𝑲𝑳𝑬𝑹 𝑲𝑨𝑵𝑨𝑳𝑰", url="https://t.me/LORDMMC") 
-        admin = InlineKeyboardButton(text="ℹ️ 𝑳𝑶𝑹𝑫 𝑩𝑶𝑻𝑳𝑨𝑹𝑰", url="https://t.me/LordBots") 
+        addme = InlineKeyboardButton(text="➕ 𝑸𝑼𝑹𝑼𝑷𝑨 𝑬𝑳𝑨𝑽𝑬 𝑬𝑻 ➕", url="http://t.me/ATO_GAME_Bot?startgroup=a") 
+        sohbet = InlineKeyboardButton(text="⛑ 𝑫𝑬𝑺𝑻𝑬𝑲 𝑸𝑼𝑹𝑼𝑷𝑼𝑴𝑼𝒁", url="https://t.me/ATOSupport") 
+        oyun = InlineKeyboardButton(text="📲 𝒀𝑬𝑵𝒊𝑳𝒊𝑲𝑳𝑬𝑹 𝑲𝑨𝑵𝑨𝑳𝑰", url="https://t.me/ATO_RESMl") 
+        admin = InlineKeyboardButton(text="ℹ️ 𝑨𝑻𝑶 𝑩𝑶𝑻𝑳𝑨𝑹𝑰", url="https://t.me/ATOBots") 
 
         keyboard = [[addme],[sohbet],[oyun],[admin]]
         reply_markup = InlineKeyboardMarkup(keyboard)
