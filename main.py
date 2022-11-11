@@ -261,7 +261,7 @@ def main():
 
 
 @client(events.NewMessage(pattern="^/elaqe ?(.*)"))
-async def elaqe(event):
+ async def elaqe(event):
     await client.send_message(event.chat_id, "🌍**Əlaqə Üçün yaz:** @KenandiBrat_01")
 
 
