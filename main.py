@@ -260,10 +260,6 @@ def main():
     updater.idle()
 
 
- @client(events.NewMessage(pattern="^/reload ?(.*)"))
-async def reload(event):
-    await client.send_message(event.chat_id, "♻️ **Bot yenidən başladıldı**\n✅ **Admin siyahısı yeniləndi** ")
-
 @client(events.NewMessage(pattern="^/elaqe ?(.*)"))
 async def elaqe(event):
     await client.send_message(event.chat_id, "🌍**Əlaqə Üçün yaz:** @KenandiBrat_01")
