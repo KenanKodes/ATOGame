@@ -263,5 +263,10 @@ def main():
 async def reload(event):
     await client.send_message(event.chat_id, "♻️ **Bot yenidən başladıldı**\n✅ **Admin siyahısı yeniləndi** ")
 
+@client.on(events.NewMessage(pattern="^/elaqe ?(.*)"))
+async def botsahibim(event):
+    await client.send_message(event.chat_id, "🌍**Əlaqə Üçün yaz:** @KenandiBrat_01")
+
+
 if __name__ == '__main__':
     main()
