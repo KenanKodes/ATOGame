@@ -260,10 +260,5 @@ def main():
     updater.idle()
 
 
-@client(events.NewMessage(pattern="^/elaqe ?(.*)"))
- async def elaqe(event):
-    await client.send_message(event.chat_id, "🌍**Əlaqə Üçün yaz:** @KenandiBrat_01")
-
-
 if __name__ == '__main__':
     main()
